@@ -1,0 +1,25 @@
+# ── Core voice I/O ────────────────────────────────────────────────────────────
+pyaudio>=0.2.14          # Microphone capture
+openai-whisper>=20231117 # Local Whisper STT
+pyttsx3>=2.90            # Offline TTS (primary)
+
+# ── AI / LLM ──────────────────────────────────────────────────────────────────
+openai>=1.10.0           # GPT-4o / GPT-4o-mini
+
+# ── Commands ──────────────────────────────────────────────────────────────────
+wikipedia>=1.4.0         # Wikipedia knowledge queries
+requests>=2.31.0         # HTTP (weather plugin, etc.)
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+numpy>=1.24.0            # Audio signal processing
+
+# ── Optional: online TTS fallback ─────────────────────────────────────────────
+# gTTS>=2.4.0
+# pygame>=2.5.0
+
+# ── Optional: system controls ─────────────────────────────────────────────────
+# screen-brightness-control>=0.21.0   # Cross-platform brightness
+# pycaw>=20230407                      # Windows audio control (Windows only)
+
+# ── Optional: GUI ─────────────────────────────────────────────────────────────
+# tkinter is built into Python — no install needed

@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Jarvis (headless)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/jarvis/main.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/jarvis",
+            "env": {
+                "OPENAI_API_KEY": "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"
+            },
+            "justMyCode": true
+        },
+        {
+            "name": "Run Jarvis GUI",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/jarvis/gui.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/jarvis",
+            "env": {
+                "OPENAI_API_KEY": "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"
+            },
+            "justMyCode": true
+        }
+    ]
+}

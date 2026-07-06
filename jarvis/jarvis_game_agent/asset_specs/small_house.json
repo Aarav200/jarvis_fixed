@@ -1,0 +1,153 @@
+{
+  "name": "small_house",
+  "type": "building",
+  "style": "low_poly",
+  "export_format": "fbx",
+
+  "geometry": {
+    "components": [
+      {
+        "id": "walls",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 4.0, "base_y": 3.2,
+          "top_x":  4.0, "top_y":  3.2,
+          "height": 2.4
+        },
+        "transform": { "location": [0, 0, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "wall"
+      },
+      {
+        "id": "roof_left",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 4.4, "base_y": 0.08,
+          "top_x":  0.08,"top_y":  0.08,
+          "height": 1.4
+        },
+        "transform": { "location": [-1.1, 0, 3.1], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "roof"
+      },
+      {
+        "id": "roof_right",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 4.4, "base_y": 0.08,
+          "top_x":  0.08,"top_y":  0.08,
+          "height": 1.4
+        },
+        "transform": { "location": [1.1, 0, 3.1], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "roof"
+      },
+      {
+        "id": "roof_ridge",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 4.5, "base_y": 0.10,
+          "top_x":  4.5, "top_y":  0.10,
+          "height": 0.10
+        },
+        "transform": { "location": [0, 0, 3.75], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "roof_dark"
+      },
+      {
+        "id": "roof_face_front",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 4.2, "base_y": 0.22,
+          "top_x":  0.12,"top_y":  0.22,
+          "height": 1.4
+        },
+        "transform": { "location": [0, -1.72, 3.1], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "wall"
+      },
+      {
+        "id": "roof_face_back",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 4.2, "base_y": 0.22,
+          "top_x":  0.12,"top_y":  0.22,
+          "height": 1.4
+        },
+        "transform": { "location": [0, 1.72, 3.1], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "wall"
+      },
+      {
+        "id": "door_frame",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.76, "base_y": 0.12,
+          "top_x":  0.76, "top_y":  0.12,
+          "height": 1.85
+        },
+        "transform": { "location": [0, -1.65, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "wood_trim"
+      },
+      {
+        "id": "door",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.60, "base_y": 0.08,
+          "top_x":  0.60, "top_y":  0.08,
+          "height": 1.75
+        },
+        "transform": { "location": [0, -1.70, 0], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "door"
+      },
+      {
+        "id": "window_front_l",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.65, "base_y": 0.08,
+          "top_x":  0.65, "top_y":  0.08,
+          "height": 0.65
+        },
+        "transform": { "location": [-1.1, -1.63, 1.1], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "glass"
+      },
+      {
+        "id": "window_front_r",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.65, "base_y": 0.08,
+          "top_x":  0.65, "top_y":  0.08,
+          "height": 0.65
+        },
+        "transform": { "location": [1.1, -1.63, 1.1], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "glass"
+      },
+      {
+        "id": "chimney",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.35, "base_y": 0.35,
+          "top_x":  0.32, "top_y":  0.32,
+          "height": 1.0
+        },
+        "transform": { "location": [1.2, 0.5, 3.2], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "brick"
+      },
+      {
+        "id": "chimney_cap",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.42, "base_y": 0.42,
+          "top_x":  0.42, "top_y":  0.42,
+          "height": 0.08
+        },
+        "transform": { "location": [1.2, 0.5, 4.2], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "roof_dark"
+      }
+    ]
+  },
+
+  "materials": {
+    "wall":      { "base_color": [0.88, 0.82, 0.72, 1.0], "roughness": 0.90, "metallic": 0.0 },
+    "roof":      { "base_color": [0.55, 0.22, 0.14, 1.0], "roughness": 0.85, "metallic": 0.0 },
+    "roof_dark": { "base_color": [0.35, 0.14, 0.08, 1.0], "roughness": 0.88, "metallic": 0.0 },
+    "wood_trim": { "base_color": [0.38, 0.22, 0.10, 1.0], "roughness": 0.82, "metallic": 0.0 },
+    "door":      { "base_color": [0.28, 0.16, 0.07, 1.0], "roughness": 0.80, "metallic": 0.0 },
+    "glass":     { "base_color": [0.60, 0.75, 0.88, 1.0], "roughness": 0.08, "metallic": 0.0 },
+    "brick":     { "base_color": [0.60, 0.28, 0.18, 1.0], "roughness": 0.92, "metallic": 0.0 }
+  }
+}

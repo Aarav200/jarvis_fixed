@@ -1,0 +1,104 @@
+====================================================
+  JARVIS - Windows Setup Guide (Step by Step)
+====================================================
+
+IMPORTANT: Commands below go in the TERMINAL, not in any .py file.
+
+
+STEP 1 — Install Python 3.10 or newer
+--------------------------------------
+Download from: https://www.python.org/downloads/
+During install: CHECK "Add Python to PATH" ✓
+
+
+STEP 2 — Install FFmpeg (required by Whisper)
+----------------------------------------------
+Option A (easiest): Install via winget
+  Open PowerShell and run:
+    winget install ffmpeg
+
+Option B: Manual
+  Download from https://ffmpeg.org/download.html
+  Extract and add the bin\ folder to your PATH
+
+
+STEP 3 — Open the project in VS Code
+--------------------------------------
+1. Extract the jarvis.zip you downloaded
+2. Open VS Code
+3. File → Open Folder → select the "jarvis" folder
+   (the one that contains main.py, voice.py, etc.)
+
+
+STEP 4 — Open the VS Code Terminal
+------------------------------------
+In VS Code: press Ctrl + ` (backtick)
+Or: Terminal menu → New Terminal
+
+Make sure you are inside the jarvis\ folder:
+  cd C:\Users\achaw\Downloads\jarvis\jarvis
+
+
+STEP 5 — Create virtual environment
+--------------------------------------
+In the terminal, type these ONE AT A TIME:
+
+  python -m venv venv
+
+  venv\Scripts\activate
+
+You should see (venv) at the start of the prompt.
+
+
+STEP 6 — Install dependencies
+--------------------------------------
+  pip install -r requirements.txt
+
+This will take a few minutes (downloading Whisper models etc.)
+
+
+STEP 7 — Set your OpenAI API key
+--------------------------------------
+  set OPENAI_API_KEY=sk-your-actual-key-here
+
+(Replace with your real key from https://platform.openai.com)
+
+Note: You need to do this every time you open a new terminal,
+OR set it permanently via Windows Environment Variables.
+
+
+STEP 8 — Run Jarvis
+--------------------------------------
+  python main.py
+
+Or with the GUI:
+  python gui.py
+
+
+STEP 9 (VS Code shortcut) — Set interpreter
+--------------------------------------
+1. Press Ctrl+Shift+P
+2. Type: "Python: Select Interpreter"
+3. Choose: venv\Scripts\python.exe
+
+
+====================================================
+  COMMON ERRORS
+====================================================
+
+Error: "python -m venv venv" — SyntaxError
+  → You pasted that command INTO main.py instead of the terminal.
+  → Download the fresh zip from Claude and replace your main.py.
+
+Error: "No module named pyaudio"
+  → Run: pip install pyaudio
+  → If that fails on Windows: pip install pipwin && pipwin install pyaudio
+
+Error: "No module named whisper"
+  → Run: pip install openai-whisper
+
+Error: Microphone not detected
+  → Check Windows Settings → Privacy → Microphone → allow app access
+
+Error: "OPENAI_API_KEY not set"
+  → Run: set OPENAI_API_KEY=sk-your-key (in the same terminal window)

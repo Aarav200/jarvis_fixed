@@ -1,0 +1,52 @@
+{
+  "name": "large_boulder",
+  "type": "prop",
+  "style": "low_poly",
+  "export_format": "fbx",
+
+  "geometry": {
+    "components": [
+      {
+        "id": "boulder_main",
+        "type": "ico_sphere",
+        "params": { "radius": 1.4, "subdivisions": 2 },
+        "transform": { "location": [0, 0, 0.7], "rotation": [0.2, 0.3, 0.5], "scale": [1.0, 0.88, 0.72] },
+        "material": "boulder_base"
+      },
+      {
+        "id": "boulder_side_a",
+        "type": "ico_sphere",
+        "params": { "radius": 0.9, "subdivisions": 1 },
+        "transform": { "location": [0.9, 0.4, 0.5], "rotation": [0.8, 0.1, 0.3], "scale": [0.85, 0.9, 0.65] },
+        "material": "boulder_dark"
+      },
+      {
+        "id": "boulder_side_b",
+        "type": "ico_sphere",
+        "params": { "radius": 0.8, "subdivisions": 1 },
+        "transform": { "location": [-0.8, -0.3, 0.45], "rotation": [0.4, 0.7, 1.2], "scale": [0.9, 0.75, 0.6] },
+        "material": "boulder_dark"
+      },
+      {
+        "id": "boulder_top_chunk",
+        "type": "ico_sphere",
+        "params": { "radius": 0.65, "subdivisions": 1 },
+        "transform": { "location": [0.2, -0.3, 1.5], "rotation": [1.0, 0.3, 0.6], "scale": [0.8, 0.85, 0.7] },
+        "material": "boulder_light"
+      },
+      {
+        "id": "ground_embed",
+        "type": "ico_sphere",
+        "params": { "radius": 1.2, "subdivisions": 1 },
+        "transform": { "location": [0, 0, -0.5], "rotation": [0, 0, 0], "scale": [1.1, 1.0, 0.45] },
+        "material": "boulder_base"
+      }
+    ]
+  },
+
+  "materials": {
+    "boulder_base":  { "base_color": [0.28, 0.26, 0.24, 1.0], "roughness": 0.97, "metallic": 0.0 },
+    "boulder_dark":  { "base_color": [0.18, 0.17, 0.16, 1.0], "roughness": 0.98, "metallic": 0.0 },
+    "boulder_light": { "base_color": [0.40, 0.38, 0.35, 1.0], "roughness": 0.90, "metallic": 0.0 }
+  }
+}

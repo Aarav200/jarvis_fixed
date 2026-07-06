@@ -1,0 +1,26 @@
+{
+  "slipper": {
+    "name": "slipper",
+    "description": "a type of footwear, typically worn indoors",
+    "learned_at": 1778067162.948861,
+    "times_seen": 1
+  },
+  "computer_mouse": {
+    "name": "computer_mouse",
+    "description": "pointing_device",
+    "learned_at": 1778106474.4317372,
+    "times_seen": 1
+  },
+  "headphones": {
+    "name": "headphones",
+    "description": "audio_listening_device",
+    "learned_at": 1778105996.7952216,
+    "times_seen": 1
+  },
+  "user": {
+    "name": "user",
+    "description": "your_name",
+    "learned_at": 1778231979.6704895,
+    "times_seen": 1
+  }
+}

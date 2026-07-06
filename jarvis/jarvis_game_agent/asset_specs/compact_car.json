@@ -1,0 +1,163 @@
+{
+  "name": "compact_car",
+  "type": "vehicle",
+  "style": "low_poly",
+  "export_format": "fbx",
+
+  "geometry": {
+    "components": [
+      {
+        "id": "body_lower",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 1.80, "base_y": 0.85,
+          "top_x":  1.80, "top_y":  0.85,
+          "height": 0.50
+        },
+        "transform": { "location": [0, 0, 0.45], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "car_body"
+      },
+      {
+        "id": "body_cabin",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 1.40, "base_y": 0.80,
+          "top_x":  1.10, "top_y":  0.78,
+          "height": 0.52
+        },
+        "transform": { "location": [0.05, 0, 0.95], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "car_body"
+      },
+      {
+        "id": "hood",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.75, "base_y": 0.80,
+          "top_x":  0.60, "top_y":  0.75,
+          "height": 0.12
+        },
+        "transform": { "location": [0.75, 0, 0.76], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "car_body"
+      },
+      {
+        "id": "trunk",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.60, "base_y": 0.78,
+          "top_x":  0.50, "top_y":  0.72,
+          "height": 0.10
+        },
+        "transform": { "location": [-0.75, 0, 0.77], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "car_body"
+      },
+      {
+        "id": "windshield_front",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.02, "base_y": 0.72,
+          "top_x":  0.02, "top_y":  0.68,
+          "height": 0.42
+        },
+        "transform": { "location": [0.60, 0, 1.0], "rotation": [0, -0.42, 0], "scale": [1, 1, 1] },
+        "material": "glass"
+      },
+      {
+        "id": "windshield_rear",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.02, "base_y": 0.68,
+          "top_x":  0.02, "top_y":  0.64,
+          "height": 0.38
+        },
+        "transform": { "location": [-0.48, 0, 1.0], "rotation": [0, 0.38, 0], "scale": [1, 1, 1] },
+        "material": "glass"
+      },
+      {
+        "id": "wheel_fl",
+        "type": "cylinder",
+        "params": { "radius": 0.28, "depth": 0.18, "vertices": 10 },
+        "transform": { "location": [0.72, 0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "tire"
+      },
+      {
+        "id": "wheel_fr",
+        "type": "cylinder",
+        "params": { "radius": 0.28, "depth": 0.18, "vertices": 10 },
+        "transform": { "location": [0.72, -0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "tire"
+      },
+      {
+        "id": "wheel_rl",
+        "type": "cylinder",
+        "params": { "radius": 0.28, "depth": 0.18, "vertices": 10 },
+        "transform": { "location": [-0.72, 0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "tire"
+      },
+      {
+        "id": "wheel_rr",
+        "type": "cylinder",
+        "params": { "radius": 0.28, "depth": 0.18, "vertices": 10 },
+        "transform": { "location": [-0.72, -0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "tire"
+      },
+      {
+        "id": "rim_fl",
+        "type": "cylinder",
+        "params": { "radius": 0.16, "depth": 0.20, "vertices": 8 },
+        "transform": { "location": [0.72, 0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "rim"
+      },
+      {
+        "id": "rim_fr",
+        "type": "cylinder",
+        "params": { "radius": 0.16, "depth": 0.20, "vertices": 8 },
+        "transform": { "location": [0.72, -0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "rim"
+      },
+      {
+        "id": "rim_rl",
+        "type": "cylinder",
+        "params": { "radius": 0.16, "depth": 0.20, "vertices": 8 },
+        "transform": { "location": [-0.72, 0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "rim"
+      },
+      {
+        "id": "rim_rr",
+        "type": "cylinder",
+        "params": { "radius": 0.16, "depth": 0.20, "vertices": 8 },
+        "transform": { "location": [-0.72, -0.52, 0.28], "rotation": [1.5708, 0, 0], "scale": [1, 1, 1] },
+        "material": "rim"
+      },
+      {
+        "id": "headlight_left",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.04, "base_y": 0.20,
+          "top_x":  0.04, "top_y":  0.18,
+          "height": 0.12
+        },
+        "transform": { "location": [0.91, 0.28, 0.62], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "headlight"
+      },
+      {
+        "id": "headlight_right",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.04, "base_y": 0.20,
+          "top_x":  0.04, "top_y":  0.18,
+          "height": 0.12
+        },
+        "transform": { "location": [0.91, -0.28, 0.62], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "headlight"
+      }
+    ]
+  },
+
+  "materials": {
+    "car_body":  { "base_color": [0.80, 0.10, 0.08, 1.0], "roughness": 0.15, "metallic": 0.60 },
+    "glass":     { "base_color": [0.55, 0.70, 0.85, 1.0], "roughness": 0.05, "metallic": 0.00 },
+    "tire":      { "base_color": [0.08, 0.08, 0.08, 1.0], "roughness": 0.90, "metallic": 0.00 },
+    "rim":       { "base_color": [0.75, 0.75, 0.78, 1.0], "roughness": 0.20, "metallic": 0.90 },
+    "headlight": { "base_color": [0.95, 0.95, 0.80, 1.0], "roughness": 0.05, "metallic": 0.10 }
+  }
+}

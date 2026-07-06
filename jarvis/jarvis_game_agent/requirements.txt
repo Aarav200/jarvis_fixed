@@ -1,0 +1,16 @@
+# Jarvis Game Agent — Requirements
+# Install with: pip install -r requirements.txt
+
+# Core (already in Jarvis likely)
+requests>=2.31.0
+
+# WebSocket for Unity bridge (optional — falls back to file bridge)
+websocket-client>=1.6.0
+
+# Image processing (optional — for vision pipeline)
+Pillow>=10.0.0
+
+# Async support
+aiohttp>=3.9.0
+
+# All other deps (json, pathlib, subprocess, logging) are stdlib

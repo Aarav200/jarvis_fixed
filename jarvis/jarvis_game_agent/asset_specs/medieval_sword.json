@@ -1,0 +1,82 @@
+{
+  "name": "medieval_sword",
+  "type": "weapon",
+  "style": "low_poly",
+  "export_format": "fbx",
+
+  "geometry": {
+    "components": [
+      {
+        "id": "blade_main",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.08, "base_y": 0.016,
+          "top_x":  0.004,"top_y":  0.004,
+          "height": 1.60
+        },
+        "transform": { "location": [0, 0, 0.90], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "iron"
+      },
+      {
+        "id": "ricasso",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.075, "base_y": 0.020,
+          "top_x":  0.075, "top_y":  0.020,
+          "height": 0.12
+        },
+        "transform": { "location": [0, 0, 0.46], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "iron"
+      },
+      {
+        "id": "crossguard",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.55, "base_y": 0.045,
+          "top_x":  0.55, "top_y":  0.035,
+          "height": 0.065
+        },
+        "transform": { "location": [0, 0, 0.40], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "iron_dark"
+      },
+      {
+        "id": "grip",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.058, "base_y": 0.058,
+          "top_x":  0.050, "top_y":  0.050,
+          "height": 0.32
+        },
+        "transform": { "location": [0, 0, 0.18], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "wood"
+      },
+      {
+        "id": "grip_band_bottom",
+        "type": "cylinder",
+        "params": { "radius": 0.042, "depth": 0.025, "vertices": 8 },
+        "transform": { "location": [0, 0, 0.22], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "iron_dark"
+      },
+      {
+        "id": "grip_band_top",
+        "type": "cylinder",
+        "params": { "radius": 0.040, "depth": 0.025, "vertices": 8 },
+        "transform": { "location": [0, 0, 0.36], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "iron_dark"
+      },
+      {
+        "id": "pommel",
+        "type": "ico_sphere",
+        "params": { "radius": 0.075, "subdivisions": 1 },
+        "transform": { "location": [0, 0, 0.055], "rotation": [0, 0, 0], "scale": [1.15, 1.15, 0.9] },
+        "material": "iron_dark"
+      }
+    ]
+  },
+
+  "materials": {
+    "iron":      { "base_color": [0.55, 0.55, 0.57, 1.0], "roughness": 0.45, "metallic": 0.80 },
+    "iron_dark": { "base_color": [0.25, 0.24, 0.24, 1.0], "roughness": 0.55, "metallic": 0.75 },
+    "wood":      { "base_color": [0.35, 0.20, 0.08, 1.0], "roughness": 0.85, "metallic": 0.00 }
+  }
+}

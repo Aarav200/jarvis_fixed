@@ -1,0 +1,118 @@
+{
+  "name": "fantasy_sword",
+  "type": "weapon",
+  "style": "low_poly",
+  "export_format": "fbx",
+
+  "geometry": {
+    "components": [
+      {
+        "id": "blade_lower",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.10, "base_y": 0.018,
+          "top_x":  0.07, "top_y":  0.014,
+          "height": 0.85
+        },
+        "transform": { "location": [0, 0, 0.5], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "blade_steel"
+      },
+      {
+        "id": "blade_upper",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.07, "base_y": 0.014,
+          "top_x":  0.005,"top_y":  0.005,
+          "height": 0.75
+        },
+        "transform": { "location": [0, 0, 1.35], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "blade_steel"
+      },
+      {
+        "id": "blade_fuller",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.018, "base_y": 0.008,
+          "top_x":  0.01,  "top_y":  0.006,
+          "height": 1.4
+        },
+        "transform": { "location": [0, 0.006, 0.62], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "blade_edge"
+      },
+      {
+        "id": "crossguard",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.60, "base_y": 0.055,
+          "top_x":  0.50, "top_y":  0.040,
+          "height": 0.08
+        },
+        "transform": { "location": [0, 0, 0.42], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "guard_gold"
+      },
+      {
+        "id": "crossguard_tip_left",
+        "type": "cone",
+        "params": { "radius1": 0.04, "radius2": 0.0, "depth": 0.15, "vertices": 5 },
+        "transform": { "location": [-0.35, 0, 0.46], "rotation": [0, 1.5708, 0], "scale": [1, 1, 1] },
+        "material": "guard_gold"
+      },
+      {
+        "id": "crossguard_tip_right",
+        "type": "cone",
+        "params": { "radius1": 0.04, "radius2": 0.0, "depth": 0.15, "vertices": 5 },
+        "transform": { "location": [0.35, 0, 0.46], "rotation": [0, -1.5708, 0], "scale": [1, 1, 1] },
+        "material": "guard_gold"
+      },
+      {
+        "id": "grip",
+        "type": "tapered_box",
+        "params": {
+          "base_x": 0.065, "base_y": 0.065,
+          "top_x":  0.055, "top_y":  0.055,
+          "height": 0.38
+        },
+        "transform": { "location": [0, 0, 0.16], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "grip_leather"
+      },
+      {
+        "id": "grip_wrap_a",
+        "type": "cylinder",
+        "params": { "radius": 0.046, "depth": 0.03, "vertices": 8 },
+        "transform": { "location": [0, 0, 0.20], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "grip_wrap"
+      },
+      {
+        "id": "grip_wrap_b",
+        "type": "cylinder",
+        "params": { "radius": 0.046, "depth": 0.03, "vertices": 8 },
+        "transform": { "location": [0, 0, 0.30], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "grip_wrap"
+      },
+      {
+        "id": "pommel",
+        "type": "ico_sphere",
+        "params": { "radius": 0.085, "subdivisions": 1 },
+        "transform": { "location": [0, 0, 0.045], "rotation": [0, 0, 0], "scale": [1.0, 1.0, 0.9] },
+        "material": "pommel_gold"
+      },
+      {
+        "id": "pommel_gem",
+        "type": "ico_sphere",
+        "params": { "radius": 0.038, "subdivisions": 1 },
+        "transform": { "location": [0, 0, 0.008], "rotation": [0, 0, 0], "scale": [1, 1, 1] },
+        "material": "gem_blue"
+      }
+    ]
+  },
+
+  "materials": {
+    "blade_steel": { "base_color": [0.75, 0.75, 0.78, 1.0], "roughness": 0.15, "metallic": 0.95 },
+    "blade_edge":  { "base_color": [0.90, 0.90, 0.92, 1.0], "roughness": 0.05, "metallic": 1.00 },
+    "guard_gold":  { "base_color": [0.85, 0.65, 0.10, 1.0], "roughness": 0.20, "metallic": 1.00 },
+    "grip_leather":{ "base_color": [0.18, 0.09, 0.05, 1.0], "roughness": 0.85, "metallic": 0.00 },
+    "grip_wrap":   { "base_color": [0.55, 0.30, 0.08, 1.0], "roughness": 0.80, "metallic": 0.00 },
+    "pommel_gold": { "base_color": [0.85, 0.65, 0.10, 1.0], "roughness": 0.18, "metallic": 1.00 },
+    "gem_blue":    { "base_color": [0.05, 0.20, 0.90, 1.0], "roughness": 0.05, "metallic": 0.00 }
+  }
+}
