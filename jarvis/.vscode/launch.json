@@ -9,7 +9,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/jarvis",
             "env": {
-                "OPENAI_API_KEY": "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"
+                "OPENAI_API_KEY": ""
             },
             "justMyCode": true
         },
@@ -21,7 +21,7 @@
             "console": "integratedTerminal",
             "cwd": "${workspaceFolder}/jarvis",
             "env": {
-                "OPENAI_API_KEY": "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"
+                "OPENAI_API_KEY": ""
             },
             "justMyCode": true
         }
